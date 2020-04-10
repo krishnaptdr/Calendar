@@ -1,0 +1,198 @@
+.calendar {
+  padding: 2em;
+}
+
+.rbc-month-row {
+  overflow: unset !important;
+}
+
+.rbc-date-cell {
+  height: 60px;
+  padding: 10px;
+}
+
+.event-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.3333333333333333);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+}
+
+.popup-container {
+  background: #fff;
+  max-width: 400px;
+  border-radius: 5px;
+  padding: 15px;
+  text-align: left;
+  min-width: 300px;
+}
+
+.book-popup {
+  position: absolute;
+  width: 400px;
+  z-index: 100;
+  background: #fff;
+  box-shadow: 1px 1px 6px -2px #0005;
+  padding: 15px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  top: 100px;
+}
+
+.booking-form input {
+  width: 100%;
+  padding: 8px 10px;
+  box-sizing: border-box;
+  border-radius: 6px;
+  border: 1px solid #cccccc;
+}
+
+.select-date input {
+  margin: 0;
+}
+
+.errorMsg {
+  text-align: left;
+  float: left;
+  font-size: 13px;
+  color: red;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+button.button {
+  background: #2196F3;
+  color: #fff;
+  margin-top: 10px;
+  padding: 8px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.button.delete {
+  background: #bd1b1b;
+  margin-left: 9px;
+}
+
+.close-popup:after {
+  content: "";
+  height: 2px;
+  width: 14px;
+  background: #000;
+  position: absolute;
+  left: 0px;
+  top: 6px;
+}
+
+.close-popup:before {
+  content: "";
+  width: 2px;
+  height: 14px;
+  background: #000;
+  position: absolute;
+  left: 6px;
+  top: 0px;
+}
+
+.close-popup {
+  float: right;
+  position: relative;
+  transform: rotate(45deg);
+  cursor: pointer;
+  width: 16px;
+  height: 16px;
+}
+
+.booking-form {
+  display: inline-block;
+  width: 100%;
+}
+
+.select-date {
+  width: calc(50% - 10px);
+  float: left;
+  margin-right: 10px;
+  text-align: left;
+  font-size: 12px;
+}
+
+.rbc-header {
+  padding: 7px !important;
+  background: #e6e6e6;
+}
+
+.rbc-time-view .rbc-row.rbc-time-header-cell {
+  min-height: unset !important;
+}
+
+.rbc-toolbar-label+.rbc-btn-group button:last-child {
+  display: none;
+}
+
+.rbc-toolbar-label+.rbc-btn-group button:nth-last-child(2) {
+  border-top-right-radius: 4px !important;
+  border-bottom-right-radius: 4px !important;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* -------- event table css --------  */
+
+.event-table {
+  width: 100%;
+  text-align: left;
+}
+
+.event-table td {
+  padding: 8px;
+  border: 1px solid #eee;
+}
+
+.event-table th {
+  background: #ccc;
+  padding: 8px;
+  border: 1px solid #ccc;
+}
+
+.event-list-header {
+  display: flex;
+  text-align: left;
+  margin-top: 35px;
+}
+
+.no-record {
+  background: #fafafa;
+  padding: 30px;
+}
+
+.event-list-header div {
+  flex: 1;
+}
+
+.event-list-header input {
+  float: right;
+  margin-top: 15px;
+  padding: 8px;
+  border-radius: 2px;
+  border: 1px solid #ccc;
+}
+
+.responsive-table {
+  display: inline-block;
+  overflow-x: auto;
+  width: 100%;
+}
+
+table.event-table tbody tr td:last-child {
+  max-width: 400px;
+}
